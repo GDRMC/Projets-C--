@@ -1,0 +1,29 @@
+//Crée une animation de progression pour un nombre d'étapes donné
+
+#include <iostream>
+#include <stdio.h>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+    int tr = 0;
+    system("pause");
+    while(tr != 25)
+    {
+        string a = "[ ]";
+        string b = "[-]";
+
+        int time = 150;
+
+        cout << "\r" << a << tr;
+        Sleep(time);
+        cout << "\r" << b << tr;
+        Sleep(time);
+        tr=tr+1;
+    }
+    cout << " " << endl;
+    system("pause");
+    return 0;
+}
